@@ -1,0 +1,55 @@
+input {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+body {
+  background-color: rgb(19, 1, 10);
+  color: #ccc;
+}
+
+span {
+  padding-right: 10px;
+}
+
+p {
+  font-size: 2rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 1.2rem;
+}
+
+label {
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.flashes {
+  list-style-type: none;
+}
+
+.warning {
+  color: rgb(181, 167, 41);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.debug {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+}
+
+a {
+  color: rgb(191, 57, 30);
+}
+
+.msg {
+  color: rgb(0, 66, 180);
+  font-size: 1.5rem;
+  font-weight: bold;
+}

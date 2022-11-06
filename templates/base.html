@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} survey {% endblock %}</title>
+    <link rel="stylesheet" href="/static/base.css" />
+  </head>
+
+  <body>
+    <div id="content">{% block content %} content{% endblock %}</div>
+    {% if debug %}
+    <br /><br />
+    <hr />
+
+    <p class="debug">
+      <b>session</b> = {{session[name_of_session]}}, <br /><br />
+      <b> cookie </b> = {{cookie}}
+    </p>
+
+    {% endif %} {% block scripts %} {% endblock %}
+  </body>
+</html>

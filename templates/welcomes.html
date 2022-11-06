@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block title %}{{title_holder}}{% endblock %} {%
+block content %}
+
+<h1>You are welcome to the {{title_holder}}</h1>
+<p>{{survey_instructions}}</p>
+{% with messages = get_flashed_messages(with_categories=true) %} {% if messages
+%}
+<ul class="flashes">
+  {% for category, message in messages %}
+  <li class="{{ category }}">{{ message }}</li>
+  {% endfor %}
+</ul>
+{% endif %} {% endwith %}
+
+<form action="/session" method="post">
+  <button>{{button_holder}}</button>
+</form>
+
+{% endblock %}

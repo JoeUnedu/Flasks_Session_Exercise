@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block title %}{{title_holder}} - Thank You!{%
+endblock %} {% block content %}
+
+<h1>Thank you!</h1>
+{% with messages = get_flashed_messages(with_categories=true) %} {% if messages
+%}
+<ul class="flashes">
+  {% for category, message in messages %}
+  <li class="{{ category }}">{{ message }}</li>
+  {% endfor %}
+</ul>
+{% endif %} {% endwith %}
+<p>
+  We are extremely grateful for taking your time to complete this
+  {{title_holder}}.
+</p>
+<p><br />{{quest_ans_holder|safe}}</p>
+
+{% endblock %}
